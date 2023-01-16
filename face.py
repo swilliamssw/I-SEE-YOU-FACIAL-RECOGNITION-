@@ -18,23 +18,19 @@ video_capture = cv2.VideoCapture(0)
 sam_image = face_recognition.load_image_file("sam.jpg")
 sam_face_encoding = face_recognition.face_encodings(sam_image)[0]
 
-leah_image = face_recognition.load_image_file("leah.jpg")
-leah_face_encoding = face_recognition.face_encodings(leah_image)[0]
-
 # Load a second sample picture and learn how to recognize it.
-kayla_image = face_recognition.load_image_file("kayla.jpg")
-kayla_face_encoding = face_recognition.face_encodings(kayla_image)[0]
+obama_image = face_recognition.load_image_file("obama.jpg")
+obama_face_encoding = face_recognition.face_encodings(obama_image)[0]
 
 # Create arrays of known face encodings and their names
 known_face_encodings = [
     sam_face_encoding,
-    kayla_face_encoding,
-    leah_face_encoding
+
 ]
+
 known_face_names = [
     "sam",
-    "kayla",
-    "leah"
+    "obma"
 ]
 
 # Initialize some variables
